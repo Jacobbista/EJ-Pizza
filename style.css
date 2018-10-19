@@ -7,42 +7,36 @@ body{
 	width: 100%;
   height: 100%;
 	margin: 0;
-	background-color: #e8e8e8;
+	background-color: #ffc929;
 	font-family: Georgia, fantasy;
 }
 
 .navbar{
-	background-color: gray;
 	height: 70px;
 	width: 100%;
 	position: fixed;
-
+	z-index: 2;
+	background-color: rgb(243,5,65);
+	opacity: 0.75;
 }
 .logo{
 	position: relative;
 	left: 30%;
 }
-.divisoriaSinistra{
-	width: 10%;
-	float:left;
-
-}
-
-.divisoriaDestra{
-	width: 10%;
-	float: right;
-
+.corpo{
+	background-color: #ffc929;
 }
 
 .container{
 	width: 80%;
-	top: 90px;
-  height: 430px;
+	top: 100px;
+	height: 430px;
 	padding: 5px;
-  background-color: #ff2525eb;
+	background-color: #ff2525eb;
   margin: auto;
   position: relative;
   float: inherit;
+	border-radius: 4px;
 }
 .elenco{
 	width: 100%;
@@ -52,6 +46,7 @@ body{
 }
 .elemento{
 	border: 2px black solid;
+	border-bottom: 0px;
 	height: 150px;
 	padding: 4px;
 }
@@ -60,6 +55,7 @@ body{
 	float: left;
 	border: 1px black solid;
 	height: 150px;
+	border-radius: 4px; 
 
 }
 .informazioniprincipali{
@@ -69,16 +65,16 @@ body{
 	font-size: 30px;
 }
 .ads{
-	position: fixed;
-  bottom: 40px;
-  background-color: black;
-  height: 50px;
+	position: relative;
+  top: 150px;
+  background-color: #aaa;
+  height: 80px;
   width: 100%;
 }
 .footer{
-	position: fixed;
-	bottom: 0px;
-	background-color: gray;
-	height: 40px;
+	position: relative;
+	top: 150px;
+	height: 100px;
 	width: 100%;
+	background-color: rgb(243,5,65);
 }
