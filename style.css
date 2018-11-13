@@ -79,13 +79,13 @@ body{
 	z-index: -1;
 	transition-property: left, transform;
 	transition-delay: 0s, 0s;
-	transition-duration: .3s, 0.3s;
+	transition-duration: .5s, 0.5s;
 	opacity: 0;
 }
 .filtri:hover:before{
 	left: 5px;
-	transform: translateY(-50%) scale(20);
-	transition-delay: 0s, 0.3s;
+	transform: translateY(-50%) scale(50);
+	transition-delay: 0s, 0.5s;
 	opacity: 1;
 }
 .filtri:after{
@@ -101,13 +101,13 @@ body{
 	z-index: -1;
 	transition-property: right, transform;
 	transition-delay: 0s, 0s;
-	transition-duration: .3s, 0.3s;
+	transition-duration: .5s, 0.5s;
 	opacity: 0;
 }
 .filtri:hover:after{
 	right: 5px;
-	transform: translateY(-50%) scale(20);
-	transition-delay: 0s, 0.3s;
+	transform: translateY(-50%) scale(50);
+	transition-delay: 0s, 0.5s;
 	opacity: 1;
 }
 .ricerca-box{
@@ -121,13 +121,14 @@ body{
 	right: 5px;
 }
 .ricerca-box:hover > .ricerca-txt{
-	width: 250px;
+	width: 150px;
 	padding: 0 6px;
-
+	transition: 0.5s;
 }
 .ricerca-box:hover > .ricerca-btn{
 	background: white;
-
+	transition: 0.5s;
+	right: -10px;
 }
 .ricerca-txt{
 	border: none;
@@ -138,7 +139,7 @@ body{
 	color: white;
 	font-size: 16px;
 	transition: 0.4s;
-	width: 0;
+	width: 0px;
 
 }
 .ricerca-btn{
@@ -152,8 +153,9 @@ body{
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	transition: 0.5s;
 	top: -10px;
-	right: -10px;
+	right: 0px;
 }
 .container{
 	width: 80%;
